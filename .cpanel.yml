@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/java2779/public_html/201011450524
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp Username & Password.txt $DEPLOYPATH
+    - /bin/cp -r app $DEPLOYPATH
+    - /bin/cp -r DATABASE FILE $DEPLOYPATH
