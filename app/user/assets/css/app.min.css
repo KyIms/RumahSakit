@@ -1692,7 +1692,7 @@ body.boxed-layout.enlarged .footer {
   min-height: 100px;
 }
 .bg-pattern {
-  background-image: url(/bg-pattern-2.png);
+  background-image: url(/RS.jpeg);
   background-size: cover;
 }
 body.authentication-bg {
@@ -1701,7 +1701,7 @@ body.authentication-bg {
   background-position: center;
 }
 body.authentication-bg-pattern {
-  background-image: url(../images/bg-pattern.jpg);
+  background-image: url(../images/RS.jpeg);
   background-color: #6658dd;
 }
 .logout-icon {

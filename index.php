@@ -9,7 +9,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Hospital Management System -A Super Responsive Information System</title>
+    <title>RS DIS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="" name="description" />
     <meta content="" name="MartDevelopers" />
@@ -63,7 +63,8 @@
 
                             <div class="text-center w-75 m-auto">
                                 <a href="index.php">
-                                    <span><img src="app/user/assets/images/logo-dark.png" alt="" height="22"></span>
+                                    <span><img src="app/user/assets/images/kyims.png" alt="" height="40"
+                                            width="100"></span>
                                 </a>
                                 <p class="text-muted mb-4 mt-3">Enter your username and password</p>
                             </div>
@@ -115,25 +116,25 @@
                     </div>
                     <!-- end card -->
 
-                    <div class="row mt-3">
+                    <!-- <div class="row mt-3">
                         <div class="col-12 text-center">
                             <p> <a href="his_admin_pwd_reset.php" class="text-white-50 ml-1">Forgot your password?</a>
                             </p>
-                            <!-- <p class="text-white-50">Don't have an account? <a href="his_admin_register.php" class="text-white ml-1"><b>Sign Up</b></a></p>-->
-                        </div> <!-- end col -->
-                    </div>
-                    <!-- end row -->
-
+                           <p class="text-white-50">Don't have an account? <a href="his_admin_register.php" class="text-white ml-1"><b>Sign Up</b></a></p>-->
                 </div> <!-- end col -->
             </div>
             <!-- end row -->
-        </div>
-        <!-- end container -->
+
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+    </div>
+    <!-- end container -->
     </div>
     <!-- end page -->
 
 
-    <?php include ("app/user/assets/inc/footer1.php");?>
+
 
     <!-- Vendor js -->
     <script src="app/user/assets/js/vendor.min.js"></script>

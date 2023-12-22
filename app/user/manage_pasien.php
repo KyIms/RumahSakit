@@ -96,7 +96,7 @@
 
                                 <div class="table-responsive">
                                     <table id="demo-foo-filtering" class="table table-bordered toggle-circle mb-0"
-                                        data-page-size="7">
+                                        justfify-content-center data-page-size="10">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
@@ -106,6 +106,7 @@
                                                 <th data-hide="phone">No Telepon</th>
                                                 <th data-hide="phone">Umur</th>
                                                 <th data-hide="phone">Kategori</th>
+                                                <th data-hide="phone">Diagnosis</th>
                                                 <th data-hide="phone">Aksi</th>
                                             </tr>
                                         </thead>
@@ -133,6 +134,7 @@
                                                 <td><?php echo $row->no_tlp;?></td>
                                                 <td><?php echo $row->umur;?> Tahun</td>
                                                 <td><?php echo $row->kategori;?></td>
+                                                <td><?php echo $row->diagnosis;?></td>
 
                                                 <td>
                                                     <a href="manage_pasien.php?delete=<?php echo $row->idPasien;?>"
@@ -150,7 +152,7 @@
                                         <?php  $cnt = $cnt +1 ; }?>
                                         <tfoot>
                                             <tr class="active">
-                                                <td colspan="8">
+                                                <td colspan="10">
                                                     <div class="text-right">
                                                         <ul
                                                             class="pagination pagination-rounded justify-content-end footable-pagination m-t-10 mb-0">

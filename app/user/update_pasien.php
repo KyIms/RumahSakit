@@ -14,10 +14,11 @@
             $umur = $_POST['umur'];
             $pat_dob = $_POST['pat_dob'];
             $keluhan = $_POST['keluhan'];
+            $diagnosis = $_POST['diagnosis'];
             //sql to insert captured values
-			$query="UPDATE  pasien  SET f_nama=?, l_nama=?, umur=?, pat_dob=?, no_pasien=?, no_tlp=?, kategori=?, alamat=?, keluhan=? WHERE idPasien = ?";
+			$query="UPDATE  pasien  SET f_nama=?, l_nama=?, umur=?, pat_dob=?, no_pasien=?, no_tlp=?, kategori=?, alamat=?, keluhan=?, diagnosis=? WHERE idPasien = ?";
 			$stmt = $mysqli->prepare($query);
-			$rc=$stmt->bind_param('sssssssssi', $f_nama, $l_nama, $umur, $pat_dob, $no_pasien, $no_tlp, $kategori, $alamat, $keluhan, $idPasien);
+			$rc=$stmt->bind_param('ssssssssssi', $f_nama, $l_nama, $umur, $pat_dob, $no_pasien, $no_tlp, $kategori, $alamat, $keluhan, $diagnosis, $idPasien);
 			$stmt->execute();
 			/*
 			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
@@ -173,6 +174,14 @@
                                                 <input type="text" name="no_pasien"
                                                     value="<?php echo $patient_number;?>" class="form-control"
                                                     id="inputZip">
+                                            </div>
+
+                                            <div class="form-group col-md-12">
+                                                <label for="inputAddress" class="col-form-label">Diagnosis
+                                                    Penyakit</label>
+                                                <textarea required="required" type="text" class="form-control"
+                                                    name="diagnosis" id="editor"
+                                                    <?php echo $row->diagnosis;?>></textarea>
                                             </div>
                                         </div>
 

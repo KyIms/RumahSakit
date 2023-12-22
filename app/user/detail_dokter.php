@@ -72,7 +72,7 @@
                                     class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
 
-                                <div class="text-centre mt-3">
+                                <div class="text-centre mt-3 ">
 
                                     <p class="text-muted mb-2 font-13"><strong>Nama Lengkap :</strong> <span
                                             class="ml-2"><?php echo $row->f_nama;?>
